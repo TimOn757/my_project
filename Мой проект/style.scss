@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$main_back_color: #54c3d3;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header {
+    background-color: $main_back_color;
+    height: 100vh;
+    .container {
+        padding-top: 15px;
+        .top_header {
+            display: flex;
+            justify-content: space-between;
+            .top_contacts {
+                display: flex;
+                font-weight: bold;
+                text-decoration: none;
+                letter-spacing: 1px;
+                color: #fff;
+                font-size: 20px;
+                & i {
+                    margin-right: 4px;
+                }
+                .top_text_left {
+                    margin-right: 20px;
+                }
+                .mail {
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+            .top_links {
+                color: #fff;
+                font-weight: bold;
+                font-style: normal;
+                text-transform: none;
+                text-decoration: none;
+                letter-spacing: 1px;
+                font-size: 20px;
+                & i:hover {
+                    opacity: 0.7;
+                }
+        }
+            }
+            
+        .nav_header {
+            margin-top: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .top_logo {
+                height: 80px;
+                width: 96px;
+            }
+            .nav_menu {
+                font-weight: bold;
+                font-style: normal;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 23px;
+                .nav_menu_links {
+                    color: #fff;
+                    text-decoration: none;
+                    margin-left: 21px;
+                    &:hover {
+                    color: #ecbf3b;
+                    }
+                }
+            
+            }
+            
+        }
+        .content_header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 130px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 48px;
+            letter-spacing: 0.5px;
+            color: #ffffff;
+            text-shadow: 0em 0.1em 0.1em rgba(0,0,0,0.2);
+            .content_header_text_top {
+                
+            }
+            .about_me_button {
+                text-align: center;
+                text-decoration: none;
+                color: #ffffff;
+                border-width: 0px;
+                border-color: rgba(0,0,0,0);
+                border-radius: 0px;
+                letter-spacing: 0px;
+                font-size: 22px;
+                font-weight: 700;
+                background-color: $main_back_color;
+                width: 250px;
+                box-shadow: 1px 2px 18px #284242;
+                display: inline-block;
+                padding: 10px 0px;
+                margin-bottom: 50px;
+                margin-top: 50px;
+                &:hover {
+                    color: black;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.about_me {
+    margin-top: 28px;
+    .container {
+        .top_content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 700;
+            &Head {
+                font-size: 33px;
+                color: #545456;
+                letter-spacing: 0.5px;
+                line-height: 1.7em;
+            }
+            &Bottom {
+                font-size: 40px;
+                color: #545456;
+                letter-spacing: 0.5px;
+            }
+            .about_me_line {
+                height: 1px;
+                width: 510px;
+                margin-top: 64px;
+                margin-bottom: 64px;
+                background-color: #545456;
+            }
+        }
+        .my_appeal {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 72px;
+            .appeal_block {
+                .appeal_head {
+                // margin-bottom: 72px;
+                text-align: center;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 40px;
+                color: #545456;
+                margin-bottom: 20px;
+                }
+                .appeal_text {
+                    font-size: 28px;
+                    letter-spacing: 0.5px;
+                    line-height: 1.5em;
+                    color: #545456;
+                }
+            }
+            & img {
+                    width: 600px;
+                    height: 600px;
+                }
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            & img {
+                width: 600px;
+                height: 600px;
+            }
+            .my_skills {
+                text-align: center;
+                .services_head {
+                margin-bottom: 72px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 40px;
+                color: #545456;
+                }
+                .skills_points {
+                    margin-left: 64px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    height: 450px;
+                    justify-content: center;
+                    & img {
+                        height: 100px;
+                        width: 95px;
+                    }
+                    & img:not(:last-child) {
+                        margin-right: 32px;
+                    }
+                }
+            }
+            
+        }
+
+    }
+
+}
+
+.sertificates {
+    margin-top: 64px;
+    background-color: rgba(0,0,0,0.04);
+    // height: 1;
+    .container {
+        display: flex;
+        flex-direction: column;
+        .sertificates_head {
+            text-align: center;
+            .head_text {
+                padding: 34px;
+                font-weight: 700;
+                font-size: 50px;
+                color: black;
+            }
+        }
+        .sertificates_watch {
+            display: flex;
+            flex-wrap: wrap;
+            & :not(:last-child) {
+            margin-right: 30px;
+        }
+        .sertificate_img {
+            height: 300px;
+            width: 370px;
+            padding-top: 30px;
+            padding-bottom: 70px;
+        }
+        }
+    }
+}
+
+.portfolio {
+    background-color: $main_back_color;
+    padding-bottom: 72px;
+    .container {
+        text-align: center;
+        .portfolio_head {
+            padding: 34px;
+            font-weight: 700;
+            font-size: 50px;
+            color: #fff;
+        }
+        .portfolio_projects {
+            display: flex;
+            justify-content: space-between;
+            .project {
+                height: 349px;
+                .project1_link {
+                    text-decoration: none;
+                    display: block;
+                    background: url(img/project1.png) no-repeat center bottom, rgba(90, 89, 89, 0.83);
+                    background-blend-mode: overlay;
+                    background-size: cover;
+                    width: 590px;
+                    height: 349px;
+                    &:hover {
+                        background-blend-mode: unset;
+                        box-shadow: 1px 2px 18px #284242;
+                    }
+                    .project_state {
+                        display: inline-block;
+                        padding-top: 133px;
+                        font-size: 32px;
+                        color: #fff;
+                    }
+                }
+                .project2_link {
+                    text-decoration: none;
+                    display: block;
+                    background: url(img/project2.png) no-repeat center bottom, rgba(90, 89, 89, 0.83);
+                    background-blend-mode: overlay;
+                    background-size: cover;
+                    width: 590px;
+                    height: 349px;
+                    &:hover {
+                        background-blend-mode: unset;
+                        box-shadow: 1px 2px 18px #284242;
+                    }
+                    .project_state {
+                        display: inline-block;
+                        padding-top: 133px;
+                        font-size: 32px;
+                        color: #fff;
+
+                    }
+                }
+            }
+        }
+    }
+}
